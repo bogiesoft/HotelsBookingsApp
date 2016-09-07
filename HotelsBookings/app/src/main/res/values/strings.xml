@@ -1,0 +1,191 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">HotelsBookings</string>
+    <string name="example">example@example.com</string>
+    <string name="checkin">Checkin</string>
+
+    <string-array name="dest_sp">
+    <!--<item name="Top">*****Top destinations*****</item>-->
+    <item name="Hammamet">Hammamet</item>
+    <item name="Sousse">Sousse</item>
+    <item name="Monastir">Monastir</item>
+    <item name="Djerba">Djerba</item>
+    <item name="Mahdia">Mahdia</item>
+    <item name="Tabarka">Tabarka</item>
+    <!--<item android:state_enabled="false" name="Others">***Autres destinations***</item>-->
+    <item name="Ain_Draham">Ain Draham</item>
+    <item name="Bizerte">Bizerte</item>
+    <item name="Douz">Douz</item>
+    <item name="Gammarth">Gammarth</item>
+    <item name="Kebili">Kebili</item>
+    <item name="kelibia">kelibia</item>
+    <item name="Nabeul">Nabeul</item>
+    <item name="Sfax">Sfax</item>
+    <item name="Tozeur">Tozeur</item>
+    <item name="Tunis">Tunis</item>
+    <item name="Zarzis">Zarzis</item>
+    <item name="Other">Other</item>
+    </string-array>
+
+    <string-array name="days_sp">
+        <item name="d1">1</item>
+        <item name="d2">2</item>
+        <item name="d3">3</item>
+        <item name="d4">4</item>
+        <item name="d5">5</item>
+        <item name="d6">6</item>
+        <item name="d7">7</item>
+        <item name="d8">8</item>
+        <item name="d9">9</item>
+        <item name="d10">10</item>
+        <item name="d11">11</item>
+        <item name="d12">12</item>
+        <item name="d13">13</item>
+        <item name="d14">14</item>
+        <item name="d15">15</item>
+        <item name="d16">16</item>
+        <item name="d17">17</item>
+        <item name="d18">18</item>
+        <item name="d19">19</item>
+        <item name="d20">20</item>
+        <item name="d21">21</item>
+        <item name="d22">22</item>
+        <item name="d23">23</item>
+        <item name="d24">24</item>
+        <item name="d25">25</item>
+        <item name="d26">26</item>
+        <item name="d27">27</item>
+        <item name="d28">28</item>
+        <item name="d29">29</item>
+        <item name="d30">30</item>
+    </string-array>
+
+
+<!--    <string-array name="rem_days_sp">
+        <item name="rd0">0</item>
+        <item name="rd1">1</item>
+        <item name="rd2">2</item>
+        <item name="rd3">3</item>
+        <item name="rd4">4</item>
+        <item name="rd5">5</item>
+        <item name="rd6">6</item>
+        <item name="rd7">7</item>
+        <item name="rd8">8</item>
+        <item name="rd9">9</item>
+        <item name="rd10">10</item>
+        <item name="rd11">11</item>
+        <item name="rd12">12</item>
+        <item name="rd13">13</item>
+        <item name="rd14">14</item>
+        <item name="rd15">15</item>
+        <item name="rd16">16</item>
+        <item name="rd17">17</item>
+        <item name="rd18">18</item>
+        <item name="rd19">19</item>
+        <item name="rd20">20</item>
+        <item name="rd21">21</item>
+        <item name="rd22">22</item>
+        <item name="rd23">23</item>
+        <item name="rd24">24</item>
+        <item name="rd25">25</item>
+        <item name="rd26">26</item>
+        <item name="rd27">27</item>
+        <item name="rd28">28</item>
+        <item name="rd29">29</item>
+        <item name="rd30">30</item>
+    </string-array>-->
+
+
+    <string-array name="roadults_sp">
+        <item name="a0">0</item>
+        <item name="a1">1</item>
+        <item name="a2">2</item>
+        <item name="a3">3</item>
+        <item name="a4">4</item>
+    </string-array>
+
+    <string-array name="rokids_sp">
+    <item name="k0">0</item>
+    <item name="k1">1</item>
+    <item name="k2">2</item>
+    <item name="k3">3</item>
+    </string-array>
+
+<string-array name="spkids_sp">
+        <item name="spk0">0</item>
+        <item name="spk1">1</item>
+        <item name="spk2">2</item>
+        <item name="spk3">3</item>
+        <item name="spkl">Lager party</item>
+    </string-array>
+
+    <string-array name="spadults_sp">
+        <item name="asp0">0</item>
+        <item name="asp1">1</item>
+        <item name="asp2">2</item>
+        <item name="asp3">3</item>
+        <item name="asp4">4</item>
+        <item name="aspl">Lager party</item>
+    </string-array>
+
+    <string-array name="persons_sp">
+    <item name="p1">1</item>
+    <item name="p2">2</item>
+    <item name="p3">3</item>
+    <item name="p4">4</item>
+    <item name="p5">5</item>
+    <item name="p6">6</item>
+    <item name="p7">7</item>
+    <item name="p8">8</item>
+    <item name="p9">9</item>
+    <item name="p10">10</item>
+    <item name="p11">11</item>
+    <item name="p12">12</item>
+    <item name="p13">13</item>
+    <item name="p14">14</item>
+    <item name="p15">15</item>
+    <item name="p16">16</item>
+    <item name="p17">17</item>
+    <item name="p18">18</item>
+    <item name="p19">19</item>
+    <item name="p20">20</item>
+    <item name="pl">Lager party</item>
+    </string-array>
+
+    <string-array name="nbrooms_sp">
+    <item name="r1">1</item>
+    <item name="r2">2</item>
+    <item name="r3">3</item>
+    <item name="r4">4</item>
+    <item name="r5">5</item>
+    </string-array>
+
+    <string-array name="hotelrating_sp">
+        <item name="1s">*</item>
+        <item name="2s">**</item>
+        <item name="3s">***</item>
+        <item name="4s">****</item>
+        <item name="5s">*****</item>
+    </string-array>
+
+    <string-array name="noyes_sp">
+        <item name="No">No</item>
+        <item name="Yes">Yes</item>
+    </string-array>
+
+    <string-array name="period_sp">
+        <item name="New">New</item>
+        <item name="Today">Today</item>
+        <item name="1_week">1 week ago</item>
+        <item name="2_week">2 weeks ago</item>
+        <item name="3_week">3 weeks ago</item>
+        <item name="4_week">1 month ago</item>
+        <item name="4_week">All</item>
+    </string-array>
+
+    <string name="hintTxtItem">Room number</string>
+    <string name="txtEmpty">List is empty</string>
+
+    <string name="hotelnamelabel">Hotel name :</string>
+    <string name="ranklabel">"Rating : "</string>
+    <string name="pricelabel">"Price : "</string>
+</resources>

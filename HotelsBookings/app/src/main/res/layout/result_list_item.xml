@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/lst_hotelname_lab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hotelnamelabel"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/lst_hotelname_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lst_hotelname_lab" />
+
+    <TextView
+        android:id="@+id/lst_hotelrank_lab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lst_hotelname_lab"
+        android:text="@string/ranklabel"
+        android:textStyle="bold"/>
+
+    <RatingBar
+        android:id="@+id/lst_hotelrank_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lst_hotelname_txt"
+        android:layout_toRightOf="@+id/lst_hotelrank_lab"
+        style="?android:attr/ratingBarStyleSmall"
+        />
+
+    <TextView
+        android:id="@+id/lst_hotelprice_lab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lst_hotelrank_lab"
+        android:text="@string/pricelabel"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/lst_hotelprice_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lst_hotelrank_txt"
+        android:layout_toRightOf="@+id/lst_hotelprice_lab" />
+
+    <ImageView
+        android:id="@+id/hotelimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:padding="1dp" />
+
+</RelativeLayout>

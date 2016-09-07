@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.riadh.hotelsbookings">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CommonPack.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UserPack.UserSpace"></activity>
+        <activity android:name=".CommonPack.CreateAccount"></activity>
+        <activity android:name=".CommonPack.ForgotPassword"></activity>
+        <activity android:name=".UserPack.HotelRoom_S"></activity>
+        <activity android:name=".UserPack.CelebrationHall_S"></activity>
+        <activity android:name=".UserPack.SwimmingPool_S"></activity>
+        <activity android:name=".UserPack.Restaurent_S"></activity>
+        <activity android:name=".CommonPack.Account_Settings"></activity>
+        <activity android:name=".AdminPack.AdminSpace"></activity>
+        <activity android:name=".AdminPack.AddHotel"></activity>
+        <activity android:name=".AdminPack.EditHotel"></activity>
+        <activity android:name=".AdminPack.ManageHotelRooms"></activity>
+        <activity android:name=".AdminPack.Addhr41per"></activity>
+        <activity android:name=".AdminPack.Addhr42per"></activity>
+        <activity android:name=".AdminPack.Addhr43per"></activity>
+        <activity android:name=".AdminPack.Addhr44per"></activity>
+        <activity android:name=".AdminPack.EditMyHotelRooms"></activity>
+        <activity android:name=".AdminPack.ViewHotelsBookings_Admin"></activity>
+        <activity android:name=".AdminPack.DeleteHotelRooms"></activity>
+        <activity android:name=".AdminPack.Manage_Hotels_Images"></activity>
+        <activity android:name=".UserPack.Show_result"></activity>
+        <activity android:name=".UserPack.Show_reserv_offer_detail"></activity>
+        <activity android:name=".UserPack.View_My_Bookings"></activity>
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme"
+    android:background="@drawable/back3"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Add a new hotel"
+        android:id="@+id/addhtitle"
+        android:layout_gravity="center" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView11"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Hotel general informations"
+                android:id="@+id/textView61"
+                android:layout_marginTop="10dp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Hotel name "
+                        android:id="@+id/textView56" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addhname" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Region "
+                        android:id="@+id/textView55" />
+
+                    <Spinner
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addhregsp"
+                        android:entries="@array/dest_sp"
+                        android:spinnerMode="dropdown" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Hotel rating"
+                        android:id="@+id/textView60" />
+
+                    <Spinner
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addhratingsp"
+                        android:entries="@array/hotelrating_sp"
+                        android:spinnerMode="dropdown" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Tel                "
+                        android:id="@+id/textView58" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addhtel"
+                        android:phoneNumber="true"
+                        android:inputType="phone" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Website       "
+                        android:id="@+id/textView59" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addhwebsite"
+                        android:inputType="textWebEmailAddress" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Hotel services"
+                android:id="@+id/textView62"
+                android:layout_marginTop="10dp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Wifi"
+                        android:id="@+id/textView107" />
+
+                    <Spinner
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addhwifisp"
+                        android:entries="@array/noyes_sp"
+                        android:spinnerMode="dropdown" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Restaurent"
+                        android:id="@+id/textView82" />
+
+                    <Spinner
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addhrestausp"
+                        android:entries="@array/noyes_sp"
+                        android:spinnerMode="dropdown" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Parking"
+                        android:id="@+id/textView72" />
+
+                    <Spinner
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addhparksp"
+                        android:entries="@array/noyes_sp"
+                        android:spinnerMode="dropdown" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Swimming pool"
+                        android:id="@+id/textView64" />
+
+                    <Spinner
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addhspsp"
+                        android:entries="@array/noyes_sp"
+                        android:spinnerMode="dropdown" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Celebration hall"
+                        android:id="@+id/textView71" />
+
+                    <Spinner
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addhchsp"
+                        android:entries="@array/noyes_sp"
+                        android:spinnerMode="dropdown" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/textView70"
+                        android:text="Gym" />
+
+                    <Spinner
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addhgymsp"
+                        android:entries="@array/noyes_sp"
+                        android:spinnerMode="dropdown" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Games room"
+                        android:id="@+id/textView73" />
+
+                    <Spinner
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addhgrsp"
+                        android:entries="@array/noyes_sp"
+                        android:spinnerMode="dropdown" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Helicopter landing"
+                        android:id="@+id/textView74" />
+
+                    <Spinner
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addhhelsp"
+                        android:entries="@array/noyes_sp"
+                        android:spinnerMode="dropdown" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Hotel prices"
+                android:id="@+id/textView102"
+                android:layout_marginTop="10dp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp" >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/textView96"
+                        android:text="Night price for one person (Adult)" />
+
+                    <EditText
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/addh_night_p" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addh_swimp_row">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Swimming pool for one person (Adult)"
+                        android:id="@+id/textView97" />
+
+                    <EditText
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/addh_swimp_p" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addh_celebh_row">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Celebration hall"
+                        android:id="@+id/textView98" />
+
+                    <EditText
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/addh_celebh_p" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addh_restaut_row">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/textView99"
+                        android:text="Single restaurent table reservation price " />
+
+                    <EditText
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/addh_restaut_p" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:id="@+id/addhsave"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/holo_green_light" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

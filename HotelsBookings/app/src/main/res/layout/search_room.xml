@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"
+    android:background="@drawable/hroom_back"
+    style="@style/Animation.AppCompat.DropDownUp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hotels rooms search"
+        android:id="@+id/textView15"
+        android:layout_weight="0.19"
+        style="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title"
+        android:accessibilityLiveRegion="polite"
+        android:accessibilityTraversalAfter="@android:integer/config_shortAnimTime"
+        android:accessibilityTraversalBefore="@integer/abc_config_activityDefaultDur"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.05">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Destination"
+                    android:id="@+id/textView"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+
+                <Spinner
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rospdest"
+                    android:entries="@array/dest_sp"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginLeft="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="182dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Number of rooms"
+                    android:id="@+id/textView8"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+
+                <Spinner
+                    android:layout_width="236dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rosp_rooms"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/nbrooms_sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.11"
+                android:weightSum="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/checkin"
+                        android:id="@+id/textView11"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="197dp"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:id="@+id/chkinbtnro"
+                            android:background="@drawable/calendar_icon"
+                            android:layout_gravity="center"
+                            android:enabled="true"
+                            android:clickable="true" />
+
+                        <TextView
+                            android:layout_width="137dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="date"
+                            android:ems="10"
+                            android:id="@+id/chkinro"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:visibility="visible"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Days"
+                        android:id="@+id/textView2"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        />
+
+                    <Spinner
+                        android:layout_width="129dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rospDays"
+                        android:entries="@array/days_sp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:id="@+id/ro1l"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Room 1"
+                    android:id="@+id/r1"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_horizontal"
+                    android:weightSum="1"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Adults"
+                            android:id="@+id/textView3"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            />
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ro1spadults"
+                            android:spinnerMode="dropdown"
+                            android:entries="@array/roadults_sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:layout_marginLeft="25dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Kids"
+                            android:id="@+id/textView4"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            />
+
+                        <Spinner
+                            android:layout_width="93dp"
+                            android:layout_height="48dp"
+                            android:id="@+id/ro1spkids"
+                            android:spinnerMode="dropdown"
+                            android:entries="@array/rokids_sp"
+
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:id="@+id/ro2l"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Room 2"
+                    android:id="@+id/textView20"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_horizontal"
+                    android:weightSum="1"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Adults"
+                            android:id="@+id/textView21"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            />
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ro2spadults"
+                            android:spinnerMode="dropdown"
+                            android:entries="@array/roadults_sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:layout_marginLeft="25dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Kids"
+                            android:id="@+id/textView22"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            />
+
+                        <Spinner
+                            android:layout_width="93dp"
+                            android:layout_height="48dp"
+                            android:id="@+id/ro2spkids"
+                            android:spinnerMode="dropdown"
+                            android:entries="@array/rokids_sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:id="@+id/ro3l"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Room 3"
+                    android:id="@+id/textView23"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_horizontal"
+                    android:weightSum="1"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Adults"
+                            android:id="@+id/textView24"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            />
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ro3spadults"
+                            android:spinnerMode="dropdown"
+                            android:entries="@array/roadults_sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:layout_marginLeft="25dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Kids"
+                            android:id="@+id/textView25"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            />
+
+                        <Spinner
+                            android:layout_width="93dp"
+                            android:layout_height="48dp"
+                            android:id="@+id/ro3spkids"
+                            android:spinnerMode="dropdown"
+                            android:entries="@array/rokids_sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:id="@+id/ro4l"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Room 4"
+                    android:id="@+id/textView26"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_horizontal"
+                    android:weightSum="1"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Adults"
+                            android:id="@+id/textView27"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            />
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ro4spadults"
+                            android:spinnerMode="dropdown"
+                            android:entries="@array/roadults_sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:layout_marginLeft="25dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Kids"
+                            android:id="@+id/textView28"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            />
+
+                        <Spinner
+                            android:layout_width="93dp"
+                            android:layout_height="48dp"
+                            android:id="@+id/ro4spkids"
+                            android:spinnerMode="dropdown"
+                            android:entries="@array/rokids_sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:id="@+id/ro5l"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Room 5"
+                    android:id="@+id/textView57"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_horizontal"
+                    android:weightSum="1"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Adults"
+                            android:id="@+id/textView29"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            />
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ro5spadults"
+                            android:spinnerMode="dropdown"
+                            android:entries="@array/roadults_sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:layout_marginLeft="25dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Kids"
+                            android:id="@+id/textView30"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            />
+
+                        <Spinner
+                            android:layout_width="93dp"
+                            android:layout_height="58dp"
+                            android:id="@+id/ro5spkids"
+                            android:spinnerMode="dropdown"
+                            android:entries="@array/rokids_sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/searchro"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/easyfind"
+                android:elegantTextHeight="false"
+                android:theme="@style/RtlOverlay.Widget.AppCompat.SearchView.MagIcon"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

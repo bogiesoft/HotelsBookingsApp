@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/vbr_relativeLayout1"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/vbr_FirstText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/vbr_SecondText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_weight="2"
+        android:gravity="center"
+        android:layout_gravity="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/vbr_ThirdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/vbr_FourthText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/vbr_FifthText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/vbr_SixthText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_weight="2"
+        android:gravity="center"
+        android:layout_gravity="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/vbr_SeventhText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/vbr_EigthText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center">
+    </TextView>
+
+</LinearLayout>

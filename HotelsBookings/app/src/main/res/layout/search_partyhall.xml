@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/celebh_bak">
+
+    <TextView
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Celebrations halls search"
+        android:id="@+id/textView18"
+        android:layout_weight="0.19"
+        style="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title"
+        android:accessibilityLiveRegion="polite"
+        android:accessibilityTraversalAfter="@android:integer/config_shortAnimTime"
+        android:accessibilityTraversalBefore="@integer/abc_config_activityDefaultDur"
+        android:textAlignment="center" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView4"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Destination"
+                    android:id="@+id/textView19" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phspdest"
+                    android:entries="@array/dest_sp"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.11"
+                android:weightSum="1"
+                android:layout_marginTop="30dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Checkin"
+                        android:id="@+id/textView14" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:id="@+id/chkinbtnph"
+                            android:background="@drawable/calendar_icon"
+                            android:layout_gravity="center" />
+
+                        <TextView
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_width="164dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="date"
+                            android:ems="10"
+                            android:id="@+id/chkinph"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_horizontal"
+                android:weightSum="1"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="30dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="left">
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Persons number"
+                        android:id="@+id/textView9"
+                        android:layout_weight="0.53" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="1"
+                    android:layout_gravity="right">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/sch_nbpers" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/srch_ch"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/easyfind"
+                android:elegantTextHeight="false"
+                android:theme="@style/RtlOverlay.Widget.AppCompat.SearchView.MagIcon"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
